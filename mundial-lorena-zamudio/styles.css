@@ -1,0 +1,274 @@
+* {
+  font-family: "Raleway" sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --borde: 5px;
+}
+
+/* login */
+body#login {
+  background: url(img/Bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 8%;
+}
+
+.Login {
+  display: none;
+}
+
+form {
+  background: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 3%;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+}
+
+form h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.form-control {
+  border: 1px solid #c6c6c6;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+}
+
+#IniciarSesion {
+  background: #374785;
+  border: 1px solid #24305e;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+  width: 294px;
+  height: 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 7%;
+  bottom: 0%;
+  background: #ffffff;
+}
+
+.footerLogo {
+  height: 55%;
+  margin-top: 10%;
+  margin-left: 1350%;
+}
+
+/* map */
+#btnCerrarSesion {
+  box-sizing: border-box;
+  width: 12%;
+  height: 20%;
+  background: #374785;
+  border: 1px solid #24305e;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#logoChico {
+  display: none;
+}
+
+#logoScaloneta {
+  margin-left: 1%;
+  margin-right: 5%;
+}
+
+#map {
+  height: 90.5vh;
+  width: 100hw;
+}
+
+#select {
+  margin-top: 1%;
+  position: fixed;
+  z-index: 1000;
+  width: 15%;
+  height: 5%;
+  margin-left: 43%;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: var(--borde);
+}
+
+#NavBar {
+  z-index: 1000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* jugadores */
+.nuestrosJugadores {
+  margin-top: 2%;
+  margin-left: 36%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.nuestrosJugadores span {
+  color: #119dd8;
+}
+
+.card h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25.83px;
+}
+
+.card p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 11px;
+  color: rgb(0, 0, 0);
+  margin-top: 6%;
+}
+
+.card {
+  /* offset-x | offset-y | blur-radius */
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+  /* top-left-and-bottom-right */
+  border-radius: 0px 2px 5px 2px;
+}
+
+.card .img-wrapper {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+#dorsalJugador {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 1%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+@media only screen and (max-width: 500px) {
+  /* login */
+  body#login {
+    background: transparent;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  .Login {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    height: 100%;
+    width: 55%;
+  }
+
+  form {
+    box-shadow: none;
+    margin-top: 28px;
+    font-size: 50%;
+    width: 80%;
+    line-height: 1%;
+  }
+
+  form h1 {
+    font-size: 135%;
+  }
+
+  .form-control {
+    box-sizing: border-box;
+    width: 100%;
+    height: 23px;
+  }
+
+  #IniciarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 23px;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .footer {
+    justify-content: center;
+    bottom: 2%;
+  }
+
+  .footerLogo {
+    margin-left: 0%;
+  }
+
+  /* map */
+
+  #logoGrande {
+    display: none;
+  }
+
+  #logoChico {
+    display: inline;
+    height: 40%;
+    margin-left: -90%;
+  }
+
+  #logoScaloneta {
+    display: inline;
+    margin-left: -13%;
+  }
+
+  #select {
+    z-index: 1000;
+    width: 70%;
+    height: 6%;
+    margin-top: 8%;
+    margin-left: 16%;
+  }
+
+  #btnCerrarSesion {
+    width: 100%;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  /* jugadores */
+  .nuestrosJugadores {
+    margin-left: 15%;
+    margin-top: 4%;
+    font-weight: 700;
+    font-size: 25px;
+  }
+}
